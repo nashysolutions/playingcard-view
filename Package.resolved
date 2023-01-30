@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "playingcards",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nashysolutions/PlayingCards.git",
+      "state" : {
+        "revision" : "2f4dd73e4b1c84c17fc6811bff13322e2576f84e",
+        "version" : "3.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
