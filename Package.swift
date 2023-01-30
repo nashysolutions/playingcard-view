@@ -11,14 +11,20 @@ let package = Package(
             targets: ["PlayingCardView"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/nashysolutions/PlayingCards.git", .upToNextMinor(from: "3.0.0"))
+        .package(url: "https://github.com/nashysolutions/playing-cards.git", .upToNextMinor(from: "1.0.0"))
     ],
     targets: [
         .target(
             name: "PlayingCardView",
-            dependencies: ["PlayingCards"]),
+            dependencies: [
+                .product(name: "PlayingCards", package: "playing-cards")]
+        ),
         .testTarget(
             name: "PlayingCardViewTests",
-            dependencies: ["PlayingCardView", "PlayingCards"]),
+            dependencies: [
+                "PlayingCardView",
+                    .product(name: "PlayingCards", package: "playing-cards")
+            ]
+        ),
     ]
 )
