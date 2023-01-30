@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "playing-cardView",
+    name: "playingcard-view",
     platforms: [.iOS(.v13)],
     products: [
         .library(
